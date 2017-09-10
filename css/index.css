@@ -1,0 +1,67 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #1e1e1e !important;
+}
+
+.row {
+  left: 5px !important;
+  right: 3% !important;
+  height: 15em;
+}
+
+.description {
+  position: absolute;
+
+}
+
+/* Possible hover colors:
+  #440015
+  #FF1461
+  #28000c
+  #2b0518
+  #420024
+  #1C111A
+  #FF4081
+  #561c2f
+*/
+.row:hover {
+  background-color: #2b0518 !important;
+}
+
+.library-links {
+  position: absolute;
+  top: 80%;
+}
+
+.example-box {
+  position: absolute;
+  left: -5px;
+}
+
+#lineDrawing {
+  width: 500px;
+  height: 500px;
+}
+
+path {
+  color: #FF4081;
+}
+
+.page-button {
+  background-color: #000000;
+  border: 1.5px solid #FF4081;
+  color: #FF4081;
+  height: 2em;
+  transition: 0.5s;
+}
+
+.page-button:hover {
+  background-color: #FF4081;
+  color: black;
+  transition: 0.5s;
+}

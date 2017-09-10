@@ -1,0 +1,50 @@
+.sidebar {
+  list-style-type: none;
+  background-color: #1e1e1e;
+  width: 230px;
+  height: 100%;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: 1s ease;
+  z-index: 3000;
+  position: fixed !important;
+  overflow: hidden;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: white;
+  transition: 1s ease;
+}
+
+.sidebar li {
+  text-indent: 20px;
+  line-height: 40px;
+  border-width: 1.5px;
+  transition: 0.5s ease;
+}
+
+.sidebar li:hover {
+  border: 1.5px solid #FF4081;
+  cursor: pointer;
+  text-indent: 30px;
+}
+
+.sidebar > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.content {
+  position: absolute;
+  top: 65px;
+  left: 235px;
+  right: 0px;
+}

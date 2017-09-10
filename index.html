@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Library Share</title>
+    <!--dependancies-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="libraries/anime.min.js"></script>
+    <!--AOS-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!--My Files-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    <script src="scripts/indexInteraction.js"></script>
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="loginSignUp.html">
+                <button class="btn btn-outline-success my-2 my-sm-0 user-nav-options" type="submit">Login/Sign Up</button>
+              </a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!--Side Bar-->
+    <ul class="sidebar">
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">Ruby</a></li>
+      <li><a href="#">PHP</a></li>
+    </ul>
+    <!--Page Content-->
+    <div class="content">
+      <div class="jsLibrariesSection">
+        <div class="section-content">
+          <h2 class="section-title">JavaScript</h2>
+          <div class="row">
+            <div class="col info">
+              <h3>Anime.js</h3>
+              <p class="description">A javascript animation engine</p>
+              <div class="example-box">
+                <div id="lineDrawing"> <svg viewBox="0 0 280 100">
+                  <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+                    <path d="M58 80V50.12C57.7 41.6 51.14 35 43 35a15 15 0 0 0 0 30h7.5v15H43a30 30 0 1 1 0-60c16.42 0 29.5 13.23 30 29.89V80H58z" stroke-dasharray="316.85528564453125"></path>
+                    <path d="M73 80V20H58v60h15z" stroke-dasharray="150"></path>
+                    <path d="M58 80V49.77C58.5 33.23 71.58 20 88 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80H58zm75 0V20h-15v60h15z" stroke-dasharray="441.1739501953125"></path>
+                    <path d="M118 80V49.77C118.5 33.23 131.58 20 148 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15zm-7.5-60a7.5 7.5 0 1 1-7.48 8v-1c.25-3.9 3.5-7 7.48-7z" stroke-dasharray="338.3053894042969"></path>
+                    <path d="M133 65a15 15 0 0 1-15-15v-7.5h-15V50a30 30 0 0 0 30 30V65zm30 15V49.77C163.5 33.23 176.58 20 193 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15z" stroke-dasharray="406.8699035644531"></path>
+                    <path d="M238 65a15 15 0 0 1 0-30c8.1 0 14.63 6.53 15 15h-15v15h30V49.89C267.5 33.23 254.42 20 238 20a30 30 0 0 0 0 60V65z" stroke-dasharray="301.8561706542969"></path>
+                    <path d="M260.48 65a7.5 7.5 0 1 1-7.48 8v-1c.26-3.9 3.5-7 7.48-7z" stroke-dasharray="47.128875732421875"></path>
+                  </g></svg>
+                </div>
+                <script src="scripts/anime.js"></script>
+              </div>
+              <div class="library-links">
+                <button class="page-button" id="btn-01">View On Git Hub</button>
+                <button class="page-button" id="btn-02">Visit Website</button>
+                <button class="page-button" id="btn-03">View Documentation</button>
+              </div>
+            </div>
+            <div class="col example">
+              <h3>React.js</h3>
+              <p class="description">A javascript library for building user interfaces</p>
+              <div class="library-links">
+                <button class="page-button" id="03">View On Git Hub</button>
+                <button class="page-button" id="04">Visit Website</button>
+                <button class="page-button" id="05">View Documentation</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Angular.js</h3>
+              <p class="description">Another user interface Javascript library</p>
+              <div class="library-links">
+                <button class="page-button" id="06">View On Git Hub</button>
+                <button class="page-button" id="07">Visit Website</button>
+                <button class="page-button" id="08">View Documentation</button>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Node.js</h3>
+              <p class="description">I don't know what this does yet</p>
+              <div class="library-links">
+                <button class="page-button" id="09">View On Git Hub</button>
+                <button class="page-button" id="10">Visit Website</button>
+                <button class="page-button" id="11">View Documentation</button>
+              </div>
+            </div>
+          </div>
+          <!--Test Rows-->
+          <div class="row">
+            <div class="col">
+              <h3>Angular.js</h3>
+              <p class="description">Another user interface Javascript library</p>
+              <div class="library-links">
+                <button class="page-button" id="06">View On Git Hub</button>
+                <button class="page-button" id="07">Visit Website</button>
+                <button class="page-button" id="08">View Documentation</button>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Node.js</h3>
+              <p class="description">I don't know what this does yet</p>
+              <div class="library-links">
+                <button class="page-button" id="09">View On Git Hub</button>
+                <button class="page-button" id="10">Visit Website</button>
+                <button class="page-button" id="11">View Documentation</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Angular.js</h3>
+              <p class="description">Another user interface Javascript library</p>
+              <div class="library-links">
+                <button class="page-button" id="06">View On Git Hub</button>
+                <button class="page-button" id="07">Visit Website</button>
+                <button class="page-button" id="08">View Documentation</button>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Node.js</h3>
+              <p class="description">I don't know what this does yet</p>
+              <div class="library-links">
+                <button class="page-button" id="09">View On Git Hub</button>
+                <button class="page-button" id="10">Visit Website</button>
+                <button class="page-button" id="11">View Documentation</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Angular.js</h3>
+              <p class="description">Another user interface Javascript library</p>
+              <div class="library-links">
+                <button class="page-button" id="06">View On Git Hub</button>
+                <button class="page-button" id="07">Visit Website</button>
+                <button class="page-button" id="08">View Documentation</button>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Node.js</h3>
+              <p class="description">I don't know what this does yet</p>
+              <div class="library-links">
+                <button class="page-button" id="09">View On Git Hub</button>
+                <button class="page-button" id="10">Visit Website</button>
+                <button class="page-button" id="11">View Documentation</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Angular.js</h3>
+              <p class="description">Another user interface Javascript library</p>
+              <div class="library-links">
+                <button class="page-button" id="06">View On Git Hub</button>
+                <button class="page-button" id="07">Visit Website</button>
+                <button class="page-button" id="08">View Documentation</button>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Node.js</h3>
+              <p class="description">I don't know what this does yet</p>
+              <div class="library-links">
+                <button class="page-button" id="09">View On Git Hub</button>
+                <button class="page-button" id="10">Visit Website</button>
+                <button class="page-button" id="11">View Documentation</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Angular.js</h3>
+              <p class="description">Another user interface Javascript library</p>
+              <div class="library-links">
+                <button class="page-button" id="06">View On Git Hub</button>
+                <button class="page-button" id="07">Visit Website</button>
+                <button class="page-button" id="08">View Documentation</button>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Node.js</h3>
+              <p class="description">I don't know what this does yet</p>
+              <div class="library-links">
+                <button class="page-button" id="09">View On Git Hub</button>
+                <button class="page-button" id="10">Visit Website</button>
+                <button class="page-button" id="11">View Documentation</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Angular.js</h3>
+              <p class="description">Another user interface Javascript library</p>
+              <div class="library-links">
+                <button class="page-button" id="06">View On Git Hub</button>
+                <button class="page-button" id="07">Visit Website</button>
+                <button class="page-button" id="08">View Documentation</button>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Node.js</h3>
+              <p class="description">I don't know what this does yet</p>
+              <div class="library-links">
+                <button class="page-button" id="09">View On Git Hub</button>
+                <button class="page-button" id="10">Visit Website</button>
+                <button class="page-button" id="11">View Documentation</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Angular.js</h3>
+              <p class="description">Another user interface Javascript library</p>
+              <div class="library-links">
+                <button class="page-button" id="06">View On Git Hub</button>
+                <button class="page-button" id="07">Visit Website</button>
+                <button class="page-button" id="08">View Documentation</button>
+              </div>
+            </div>
+            <div class="col">
+              <h3>Node.js</h3>
+              <p class="description">I don't know what this does yet</p>
+              <div class="library-links">
+                <button class="page-button" id="09">View On Git Hub</button>
+                <button class="page-button" id="10">Visit Website</button>
+                <button class="page-button" id="11">View Documentation</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
